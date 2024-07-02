@@ -39,7 +39,7 @@ while (i <= anos_total): #o código será executado enquanto i=1 for menor ou ig
   gastos_investimento = float(input('Digite os gastos da empresa com investimentos diretos, como cursos e treinamento de colaboradores.\n'))
   gastos_despesas = float(input('Digite os gastos de manutenção e administração da empresa, como limpeza, aluguel e materiais necessários para o funcionamento.\n'))
   gastos_custos = float(input('Digite os gastos de matéria prima e salário de colaboradores da empresa.\n'))
-  gastos_total = (gastos_investimento) + (gastos_despesas) + (gastos_custos) #cálculo do total de gastos
+  gastos_total += (gastos_investimento) + (gastos_despesas) + (gastos_custos) #cálculo do total de gastos
   prejuizo = 0
   aux = teto_gastos
 
