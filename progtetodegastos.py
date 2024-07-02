@@ -61,7 +61,7 @@ while (i <= anos_total): #o código será executado enquanto i=1 for menor ou ig
   # porém, isso não reflete o valor real da inflação considerando que é um número aleatório a cada ano
   teto_gastos += inflacao #esse cálculo adiciona a inflação ao teto de gastos inicial, para saber qual será o teto de gastos no próximo ano
   i+=1 #iteraçao
-  prejuizo += gastos_total
+  gastos_total += prejuizo
 
 arq_gastos.close()
 arq_teto.close()
