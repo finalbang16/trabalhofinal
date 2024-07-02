@@ -6,11 +6,11 @@
 Este programa calcula o prejuízo anual de uma empresa baseado nos gastos e um teto de gastos estipulados pelo usuário. O objetivo é auxiliar no monitoramento financeiro ao longo de um período definido de anos, considerando também a inflação anual.
 
 # Funcionalidades
-Entrada de dados pelo usuário sobre o número de anos e o teto de gastos.
-Cálculo dos gastos totais da empresa por ano, incluindo investimentos, despesas, e custos.
-Verificação se os gastos totais excederam o teto de gastos estipulado.
-Aplicação da inflação anual ao teto de gastos para o próximo ano.
-Saída dos resultados, que pode ser exibida na tela ou salva em arquivos CSV.
+1. Entrada de dados pelo usuário sobre o número de anos e o teto de gastos.
+2. Cálculo dos gastos totais da empresa por ano, incluindo investimentos, despesas, e custos.
+3. Verificação se os gastos totais excederam o teto de gastos estipulado.
+4. Aplicação da inflação anual ao teto de gastos para o próximo ano.
+5. Saída dos resultados, que pode ser exibida na tela ou salva em arquivos CSV.
 
 # Dependências
 Este programa não requer bibliotecas externas além do Python padrão. Ele utiliza as seguintes funções e métodos embutidos:
