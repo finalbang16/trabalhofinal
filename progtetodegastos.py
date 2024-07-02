@@ -13,7 +13,6 @@ print("Esse software foi desenvolvido com o intuito de facilitar o cálculo de p
 
 anos_total = int(input('Digite a quantidade de anos que deve ser calculado se a empresa teve prejuízo ou não. '))
 teto_gastos = float(input('Digite o teto de gastos do ano especificado.\n'))
-aux = 0
 i = 1
 
 arq_teto = open("teto_gastos.csv", "w")
@@ -30,13 +29,12 @@ tela_nao2 = "n" #para checar caracteres minusculos
 
 while (i <= anos_total): #o código será executado enquanto i=1 for menor ou igual a quantidade de anos estipulada pelo usuário
   print("Teto de gastos do ano {0}: {1}".format(i, teto_gastos))
-  tela_ou_arq = input("Os resultados devem ser informados na tela? 'S' para sim e 'N' para nao, n escrevera os resultado em um documento .csv")
+  tela_ou_arq = input("Os resultados devem ser informados na tela? 'S' para sim e 'N' para nao, n escrevera os resultados em um documento .csv")
 
   # Loop para garantir que o usuário insira uma opção válida
   while (tela_ou_arq != tela_sim) and (tela_ou_arq != tela_sim2) and (tela_ou_arq != tela_nao) and (tela_ou_arq != tela_nao2):
-    tela_ou_arq = input("Os resultados devem ser informados na tela? 'S' para sim e 'N' para nao, n escrevera os resultado em um documento .csv")
+    tela_ou_arq = input("Os resultados devem ser informados na tela? 'S' para sim e 'N' para nao, n escrevera os resultados em um documento .csv")
 
-  aux = teto_gastos
   gastos_investimento = float(input('Digite os gastos da empresa com investimentos diretos, como cursos e treinamento de colaboradores.\n'))
   gastos_despesas = float(input('Digite os gastos de manutenção e administração da empresa, como limpeza, aluguel e materiais necessários para o funcionamento.\n'))
   gastos_custos = float(input('Digite os gastos de matéria prima e salário de colaboradores da empresa.\n'))
@@ -63,6 +61,7 @@ while (i <= anos_total): #o código será executado enquanto i=1 for menor ou ig
   # porém, isso não reflete o valor real da inflação considerando que é um número aleatório a cada ano
   teto_gastos += inflacao #esse cálculo adiciona a inflação ao teto de gastos inicial, para saber qual será o teto de gastos no próximo ano
   i+=1 #iteraçao
+  prejuizo += gastos_total
 
 arq_gastos.close()
 arq_teto.close()
