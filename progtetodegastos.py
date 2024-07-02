@@ -14,6 +14,7 @@ print("Esse software foi desenvolvido com o intuito de facilitar o cálculo de p
 anos_total = int(input('Digite a quantidade de anos que deve ser calculado se a empresa teve prejuízo ou não. '))
 teto_gastos = float(input('Digite o teto de gastos do ano especificado.\n'))
 i = 1
+aux = 0
 
 arq_teto = open("teto_gastos.csv", "w")
 arq_teto.write("Ano,Teto de Gastos\n")
@@ -40,6 +41,7 @@ while (i <= anos_total): #o código será executado enquanto i=1 for menor ou ig
   gastos_custos = float(input('Digite os gastos de matéria prima e salário de colaboradores da empresa.\n'))
   gastos_total = (gastos_investimento) + (gastos_despesas) + (gastos_custos) #cálculo do total de gastos
   prejuizo = 0
+  aux = teto_gastos
 
   if (teto_gastos < gastos_total):
     prejuizo = gastos_total - teto_gastos
