@@ -3,7 +3,6 @@
 
 ## Programa de Cálculo de Teto de Gastos Anual
 
-# Descrição
 Este programa calcula o prejuízo anual de uma empresa baseado nos gastos e um teto de gastos estipulados pelo usuário. O objetivo é auxiliar no monitoramento financeiro ao longo de um período definido de anos, considerando também a inflação anual.
 
 # Funcionalidades
